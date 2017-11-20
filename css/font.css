@@ -1,0 +1,12 @@
+@font-face {
+			font-family: "AndikaRegular";
+			src: url("../fonts/AndikaRegular/AndikaRegular.eot");
+			src: url("../fonts/AndikaRegular/AndikaRegular.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/AndikaRegular/AndikaRegular.woff") format("woff"),
+			url("../fonts/AndikaRegular/AndikaRegular.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+	* {
+		font-family: AndikaRegular
+	}

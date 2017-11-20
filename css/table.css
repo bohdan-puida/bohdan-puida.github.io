@@ -1,0 +1,21 @@
+table {
+    border-collapse: collapse;
+    width:70%;
+    margin-left:15%;
+    margin-right:15%;
+
+}
+
+table, th, td {
+    border: 1px;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    height: 25px;
+    vertical-align: bottom;
+    border: 1px solid black;
+}
+
+tr:nth-child(even) {
+  background-color: grey;
+}

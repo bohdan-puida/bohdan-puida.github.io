@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="css/nav.css">
+  <link rel="stylesheet" type="text/css" href="css/font.css">
+  <link rel="stylesheet" type="text/css" href="css/text.css">
+  <link rel="stylesheet" type="text/css" href="css/container.css">
+  <link rel="stylesheet" type="text/css" href="css/blog.css">
   <title>Blog</title>
 </head>
 <body>
@@ -17,18 +21,21 @@
 <li><a href="hobbies.html">Hobbies</a></li>
 <li><a href="subjects.html">Subjects</a></li>
 <li><a href="skills.html">Skills</a></li>
+<li style="float:right">
+  <a class="active" href="https://github.com/bohdan-puida/bohdan-puida.github.io" target="_blank">
+    Github
+  </a>
+</li>
 </ul>
 </div>
+<div class="container">
 <h1>Blog </h1>
 
 <form xmlns="http://www.w3.org/1999/xhtml" method="post" name="commentform">
-<br>Topic</br>
-<p><input id="tema" name="tema" size="25" type="text" value="" />
-</p>
-<p><textarea cols="48" id="comment" name="comment" rows="8"placeholder="Enter a message"></textarea>
-</p>
-<p><input id="submit" name="submit" type="submit" value="Submit" />
-</p>
+<p><input id="tema" name="tema" size="25" type="text" value="" placeholder="Topic" /></p>
+<p><textarea cols="48" id="comment" name="comment" rows="8"placeholder="Enter a message"></textarea></p>
+<p><button>Submit</button></p>
 </form>
+</div>
 </body>
 </html>
