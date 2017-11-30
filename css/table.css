@@ -19,3 +19,4 @@ table, th, td {
 tr:nth-child(even) {
   background-color: grey;
 }
+tr:hover {background-color: #ddd;}
