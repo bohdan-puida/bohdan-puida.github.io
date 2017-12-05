@@ -3,7 +3,7 @@ function validateRequired(value){
 }
 
 function validatePhone(value){
-return value.match(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im);
+return value.match( /^\d[\d\(\)\ -]{8,14}\d$/);
 }
 
 function validateEmail(value){
