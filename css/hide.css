@@ -1,0 +1,28 @@
+.hideButton {
+    width: 100%;
+    padding: 10px 0 10px 0;
+    background: white;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    transition: width 1s;
+    font-weight: bold;
+	  border-radius: 5px;
+}
+
+.hideButton:hover {
+	background: grey;
+    color:white;
+}
+
+.hideText {
+   width: 90%;
+   height: 0px;
+   padding: auto;
+   margin: auto;
+   background: white;
+   display: block;
+   overflow: hidden;
+   transition: height 2s;
+   text-align: center;
+}

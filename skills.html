@@ -9,7 +9,9 @@
   <link rel="stylesheet" type="text/css" href="css/table.css">
   <link rel="stylesheet" type="text/css" href="css/text.css">
   <link rel="stylesheet" type="text/css" href="css/container.css">
+  <link rel="stylesheet" type="text/css" href="css/hide.css">
   <script type="text/javascript" src="./js/tab.js"></script>
+  <script type="text/javascript" src="./js/hide.js"></script>
   <title>Skills</title>
 </head>
 <body>
@@ -23,6 +25,7 @@
 <li><a href="hobbies.html">Hobbies</a></li>
 <li><a href="subjects.html">Subjects</a></li>
 <li><a href="skills.html">Skills</a></li>
+<li><a href="gallery.html">Gallery</a></li>
 <li style="float:right">
   <a class="active" href="https://github.com/bohdan-puida/bohdan-puida.github.io" target="_blank">
     Github
@@ -31,8 +34,8 @@
 </ul>
 </div>
 <div class="container">
-<h1>Knowledge of programming languages: </h1>
-
+<h1 href="" class="hideButton" onclick="hide()" id="hideButton">Knowledge of programming languages: </h1>
+<div class="hideText" id="hideText">
 <table>
 
 <tr>
@@ -64,5 +67,7 @@
     </tr>
 </table>
 </div>
+</div>
+<script type="text/javascript" src="./js/load.js"></script>
 </body>
 </html>

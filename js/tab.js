@@ -1,6 +1,6 @@
 function tab(event) {
 id = event.keyCode-48;
-if (event.shiftKey) {
+if (event.shiftKey && event.altKey) {
     url = '';
     switch(id) {
         case 1:

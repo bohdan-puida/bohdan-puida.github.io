@@ -11,7 +11,12 @@
   <link rel="stylesheet" type="text/css" href="css/text.css">
   <link rel="stylesheet" type="text/css" href="css/container.css">
   <link rel="stylesheet" type="text/css" href="css/audio.css">
+  <link rel="stylesheet" type="text/css" href="css/tableHide.css">
+  <link rel="stylesheet" type="text/css" href="css/hide.css">
   <script type="text/javascript" src="./js/tab.js"></script>
+  <script type="text/javascript" src="./js/hide.js"></script>
+
+
 
   <title>Home</title>
 </head>
@@ -26,6 +31,7 @@
   <li> <a href="hobbies.html">Hobbies</a> </li>
   <li> <a href="subjects.html">Subjects</a> </li>
   <li> <a href="skills.html">Skills</a> </li>
+  <li><a href="gallery.html">Gallery</a></li>
   <li style="float:right">
     <a class="active" href="https://github.com/bohdan-puida/bohdan-puida.github.io" target="_blank">
       Github
@@ -41,66 +47,79 @@
   <source src="content/track.mp3" type="audio/mpeg" />
    Your browser does not support the audio element.
 </audio>
-<h2>Personal info: </h2>
+<input type="checkbox" id="checkbox-personal-info" class="hide" checked/>
+<h2
+  href="" class="hideButton" onclick="hide()" id="hideButton">Personal info</h2></label>
+<div >
 <table>
 <tr>
-  <td><i>Name:</i></td>
+  <td>Name:</td>
   <td>Bohdan Puida</td>
 </tr>
 <tr>
-  <td><i>Gender:</i></td>
+  <td>Gender:</td>
   <td>Male</td>
 </tr>
 <tr>
-  <td><i>Age:</i></td>
+  <td>Age:</td>
   <td>19</td>
 </tr>
 <tr>
-<td><i>Contacts:</i></td>
+<td>Contacts:</td>
 <td><a href="mailto:bohdan.puida@nure.ua">bohdan.puida@nure.ua</a></td>
 </tr>
 </table>
-
-
-<h2>Education:</h2>
+</div>
+<input type="checkbox" id="checkbox-education" class="hide" />
+<label for="checkbox-education"><h2
+  href="" class="hideButton" onclick="hide()" id="hideButton">Education</h2></label>
+<div>
    <table>
      <tr>
-       <td><i>Primary education:</i></td>
+       <td>Primary education:</td>
        <td>School №36</dt>
        <td>2004-2014</td>
      </tr>
      <tr>
-       <td><i>Primary education(to be continued):</i></td>
+       <td>Primary education(to be continued):</td>
        <td>School №3</dt>
        <td>2008-2015</td>
      </tr>
      <tr>
 
-       <td><i>Higher education:</i></td>
+       <td>Higher education:</td>
        <td>KTURE</td>
        <td>2015-</td>
      </tr>
    </table>
+ </div>
+ <input type="checkbox" id="checkbox-language-skills" class="hide" />
+ <label for="checkbox-language-skills"><h2
+   href="" class="hideButton" onclick="hide()" id="hideButton">Language skills</h2></label>
 
-   <h2>Language skills:</h2>
+   <div>
    <table>
      <tr>
-       <td><i>Russian:</i></td>
+       <td>Russian:</td>
        <td>Mother tongue</td>
      </tr>
      <tr>
-       <td><i>Ukrainian:</i></td>
+       <td>Ukrainian:</td>
        <td>Second language</td>
      </tr>
      <tr>
-       <td><i>English:</i></td>
+       <td>English:</td>
        <td>Upper intermediate</td>
      </tr>
      <tr>
-       <td><i>German:</i></td>
+       <td>German:</td>
        <td>Intermediate</td>
      </tr>
-   </div>
+
 </table>
+</div>
+</div>
+<script type="text/javascript" src="./js/modal.js"></script>
+<script type="text/javascript" src="./js/load.js"></script>
 </body>
 </html>

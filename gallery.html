@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="css/nav.css">
+  <link rel="stylesheet" type="text/css" href="css/font.css">
+  <link rel="stylesheet" type="text/css" href="css/text.css">
+  <link rel="stylesheet" type="text/css" href="css/container.css">
+  <link rel="stylesheet" type="text/css" href="css/hide.css">
+  <link rel="stylesheet" type="text/css" href="css/gallery.css">
+  <script type="text/javascript" src="./js/tab.js"></script>
+  <script type="text/javascript" src="./js/hide.js"></script>
+  <script type="text/javascript" src="./js/gallery.js"></script>
+  <title>Gallery</title>
+</head>
+<body onkeyup="tab(event)">
+<div class="nav">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="plans.html">Plans</a></li>
+<li><a href="ai.html">AI</a></li>
+<li><a href="blog.html">Blog</a></li>
+<li><a href="hobbies.html">Hobbies</a></li>
+<li><a href="subjects.html">Subjects</a></li>
+<li><a href="skills.html">Skills</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li style="float:right">
+  <a class="active" href="https://github.com/bohdan-puida/bohdan-puida.github.io" target="_blank">
+    Github
+  </a>
+</li>
+</ul>
+</div>
+<div class=container>
+
+<h1 > Gallery </h1>
+
+<div class="row">
+  <div class="column">
+    <img src="http://www.galeriedivision.com/images/900x480/5.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="http://www.galeriedivision.com/images/900x480/27.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="http://www.galeriedivision.com/images/900x480/83.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="http://www.galeriedivision.com/images/900x480/90.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="http://www.galeriedivision.com/images/900x480/5.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="http://www.galeriedivision.com/images/900x480/27.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="http://www.galeriedivision.com/images/900x480/83.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="http://www.galeriedivision.com/images/900x480/90.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+</div>
+<script type="text/javascript" src="./js/load.js"></script>
+</body>
+</html>

@@ -10,6 +10,7 @@
   <link rel="stylesheet" type="text/css" href="css/container.css">
   <link rel="stylesheet" type="text/css" href="css/blog.css">
   <script type="text/javascript" src="./js/tab.js"></script>
+  <script type="text/javascript" src="./js/load.js"></script>
   <title>Blog</title>
 </head>
 <body>
@@ -23,6 +24,7 @@
 <li><a href="hobbies.html">Hobbies</a></li>
 <li><a href="subjects.html">Subjects</a></li>
 <li><a href="skills.html">Skills</a></li>
+<li><a href="gallery.html">Gallery</a></li>
 <li style="float:right">
   <a class="active" href="https://github.com/bohdan-puida/bohdan-puida.github.io" target="_blank">
     Github
@@ -33,11 +35,25 @@
 <div class="container">
 <h1>Blog </h1>
 
+
 <form xmlns="http://www.w3.org/1999/xhtml" method="post" name="commentform">
-<p><input id="tema" name="tema" size="25" type="text" value="" placeholder="Topic" /></p>
-<p><textarea cols="48" id="comment" name="comment" rows="8"placeholder="Enter a message"></textarea></p>
+  <div class="field">
+<p><input id="tema" name="tema" size="25" type="text" value="" placeholder="Topic" class="text-input" /></p>
+</div>
+<div class="field">
+<p><input id="email" name="email" size="25" type="email" value="" placeholder="Email" class="text-input" /></p>
+</div>
+<div class="field">
+<p><input id="number" name="number" size="25" type="tel" value="" placeholder="Phone number" class="text-input" /></p>
+</div>
+<div class="field">
+<p><textarea cols="48" id="comment" name="comment" rows="8"placeholder="Enter a message" class="text-input"></textarea></p>
+</div>
 <p><button>Submit</button> <button type="reset">Reset</button></p>
 </form>
+<script type="text/javascript" src="./js/opaque.js"></script>
 </div>
+ <script type="text/javascript" src="./js/validate.js"></script>
+ <script type="text/javascript" src="./js/load.js"></script>
 </body>
 </html>

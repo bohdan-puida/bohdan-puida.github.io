@@ -1,0 +1,10 @@
+.hide, .hide+label~div {
+  display: none;
+}
+.hide:checked+label+div {
+  display: block;
+}
+h2 {
+  font-size: 18pt;
+  font-style: bold;
+}

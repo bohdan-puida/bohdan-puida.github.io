@@ -2,4 +2,8 @@
   margin: auto;
   max-width: 1000px;
   min-height: 80%;
+  opacity: 0;
+  margin: -62px auto;
+  transition: all 0.7s;
+  padding: 20px 15px;
 }
