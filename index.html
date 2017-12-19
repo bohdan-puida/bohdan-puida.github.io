@@ -22,7 +22,7 @@
 </head>
 <body>
   <body onkeyup="tab(event)">
-  <div class="nav">
+  <nav class="nav">
   <ul>
   <li> <a href="index.html">Home</a> </li>
   <li> <a href="plans.html">Plans</a> </li>
@@ -32,14 +32,15 @@
   <li> <a href="subjects.html">Subjects</a> </li>
   <li> <a href="skills.html">Skills</a> </li>
   <li><a href="gallery.html">Gallery</a></li>
+  <li><a href="canvas.html">Canvas</a></li>
   <li style="float:right">
     <a class="active" href="https://github.com/bohdan-puida/bohdan-puida.github.io" target="_blank">
       Github
     </a>
   </li>
   </ul>
-  </div>
-  <div class="container">
+</nav>
+  <section class="container">
   <h1> Home page <h1>
   <img class="img" src="img/image.png" alt="Bogdan_Puida">
   <audio controls="controls">
@@ -51,6 +52,7 @@
 <h2
   href="" class="hideButton" onclick="hide()" id="hideButton">Personal info</h2></label>
 <div >
+  <main>
 <table>
 <tr>
   <td>Name:</td>
@@ -69,11 +71,13 @@
 <td><a href="mailto:bohdan.puida@nure.ua">bohdan.puida@nure.ua</a></td>
 </tr>
 </table>
+</main>
 </div>
 <input type="checkbox" id="checkbox-education" class="hide" />
 <label for="checkbox-education"><h2
   href="" class="hideButton" onclick="hide()" id="hideButton">Education</h2></label>
 <div>
+  <article>
    <table>
      <tr>
        <td>Primary education:</td>
@@ -92,12 +96,14 @@
        <td>2015-</td>
      </tr>
    </table>
+ </article>
  </div>
  <input type="checkbox" id="checkbox-language-skills" class="hide" />
  <label for="checkbox-language-skills"><h2
    href="" class="hideButton" onclick="hide()" id="hideButton">Language skills</h2></label>
 
    <div>
+     <article>
    <table>
      <tr>
        <td>Russian:</td>
@@ -117,8 +123,9 @@
      </tr>
 
 </table>
+</article>
 </div>
-</div>
+</section>
 <script type="text/javascript" src="./js/modal.js"></script>
 <script type="text/javascript" src="./js/load.js"></script>
 </body>

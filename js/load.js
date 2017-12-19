@@ -6,3 +6,4 @@ function dynamicallyLoadScript(url) {
 }
 
  dynamicallyLoadScript('js/opaque.js');
+ dynamicallyLoadScript('js/gallery.js')
