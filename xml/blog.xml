@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="blog.xsl"?>
+<blog>
+  <post post_id='1'>
+    <author author_id='1'>
+      <full_name>Bogdan Puida</full_name>
+      <email>bohdan.puida@nure.ua</email>
+    </author>
+    <date>2017-12-22</date>
+    <time>13:15:30</time>
+    <title>Welcome</title>
+    <body>I greet you!</body>
+    <tag>Bogdan</tag>
+    <tag>Welcome</tag>
+    <tag>Greetings</tag>
+    <tag>Waterfalls</tag>
+    <file src="./../img/image1.png" type="image"/>
+    <file src="./../img/image2.png" type="image"/>
+    <comment comment_id='1'>
+      <author author_id='2'>
+        <full_name>Vasiliy</full_name>
+        <email>xml@xml.xml</email>
+      </author>
+      <date>2017-12-22</date>
+      <time>13:17:20</time>
+      <body>Hello there! =)</body>
+    </comment>
+    <comment comment_id='2'>
+      <author author_id='3'>
+        <full_name>Goose</full_name>
+        <email>goose@gmail.com</email>
+      </author>
+      <date>2017-12-01</date>
+      <time>17:25:30</time>
+      <body>Greetings!</body>
+    </comment>
+  </post>
+  <post post_id='2'>
+    <author author_id='1'>
+      <full_name>Bogdan Puida</full_name>
+      <email>bohdan.puida@nure.ua</email>
+    </author>
+    <date>2017-12-23</date>
+    <time>09:10:03</time>
+    <title>ML or XML?</title>
+    <body>Whether the weather</body>
+    <tag>Web</tag>
+    <tag>Nothing to be done</tag>
+    <file src="./../img/image3.png" type="image"/>
+    <comment comment_id='3'>
+      <author author_id='4'>
+        <full_name>Yes sir</full_name>
+        <email>guesswhat@gmail.com</email>
+      </author>
+      <date>2017-12-23</date>
+      <time>13:20:00</time>
+      <body>ML</body>
+    </comment>
+    <comment comment_id='4'>
+      <author author_id='2'>
+        <full_name>Exquisite creature</full_name>
+        <email>in_creation@gmail.com</email>
+      </author>
+      <date>2017-12-03</date>
+      <time>14:55:17</time>
+      <body>Vse-taki XML</body>
+    </comment>
+  </post>
+</blog>

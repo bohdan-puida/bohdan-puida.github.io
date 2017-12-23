@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="blog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="post">
+          <xs:complexType>
+            <xs:attribute name="post_id" type="xs:integer"/>
+            <xs:element name="author">
+              <xs:complexType>
+                <xs:attribute name="author_id" type="xs:integer"/>
+                <xs:element name="full_name" type="xs:string"/>
+                <xs:element name="email" type="xs:string"/>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="date" type="xs:string"/>
+            <xs:element name="time" type="xs:string"/>
+            <xs:element name="title" type="xs:string"/>
+            <xs:element name="body" type="xs:string"/>
+            <xs:sequence>
+              <xs:element name="tag" type="xs:string"/>
+            </xs:sequence >
+            <xs:sequence>
+              <xs:element name="file">
+                <xs:attribute name="src" type="xs:string"/>
+                <xs:attribute name="type" type="xs:string"/>
+              </xs:element>
+            </xs:sequence>
+            <xs:sequence>
+              <xs:element name="comment">
+                <xs:complexType>
+                  <xs:attribute name="comment_id" type="xs:integer"/>
+                  <xs:element name="author">
+                    <xs:complexType>
+                      <xs:attribute name="author_id" type="xs:integer"/>
+                      <xs:element name="full_name" type="xs:string"/>
+                      <xs:element name="email" type="xs:string"/>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="date" type="xs:string"/>
+                  <xs:element name="time" type="xs:string"/>
+                  <xs:element name="body" type="xs:string"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

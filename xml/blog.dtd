@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE blog [
+<!ELEMENT blog (post*)>
+<!ELEMENT post (author, date, time, title, body, tag*, file*, comment*)>
+<!ATTLIST post post_id CDATA #REQUIRED>
+<!ELEMENT author (full_name, email)>
+<!ATTLIST author author_id CDATA #REQUIRED>
+<!ELEMENT comment (author, date, time, body)>
+<!ATTLIST comment comment_id CDATA #REQUIRED>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT body (#PCDATA)>
+<!ELEMENT file (#PCDATA)>
+<!ATTLIST file type CDATA #REQUIRED>
+<!ATTLIST file src CDATA #REQUIRED>
+<!ELEMENT tag (#PCDATA)>
+<!ELEMENT full_name (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+]>
